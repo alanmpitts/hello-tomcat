@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     run: sampleapp
-  name: sameleapp
+  name: sampleapp
 spec:
   replicas: 1
   selector:
