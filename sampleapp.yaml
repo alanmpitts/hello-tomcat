@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: sampleapp
+  name: sameleapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: sampleapp
+  template:
+    metadata:
+      labels:
+        run: sampleapp
+    spec:
+      containers:
+      - image: dtr.aws.e1.nwie.net/infra-arch/hello-tomcat:0.1
+        name: sampleapp
