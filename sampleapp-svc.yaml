@@ -5,7 +5,6 @@ metadata:
   labels:
     run: sampleapp
   name: sampleapp
-  selfLink: /api/v1/namespaces/infra-arch/services/sampleapp
 spec:
   ports:
   - port: 8080
@@ -15,5 +14,3 @@ spec:
     run: sampleapp
   sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}

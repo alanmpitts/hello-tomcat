@@ -4,7 +4,12 @@ metadata:
   name: sampleapp-ingress
   annotations:
     kubernetes.io/ingress.class: default
+    kubernetes.io/tls-acme: "true"
 spec:
+  tls:
+  - hosts:
+    - sampleapp-amp.apps-test.aws.e1.nwie.net
+    secretName: sample-app-ssl-cert
   rules:
   - host: sampleapp-amp.apps-test.aws.e1.nwie.net
     http:

@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: nwie
     kind: ClusterIssuer
-  commonName: sampleapp.nwie.net
+  commonName: sampleapp-amp.apps-test.aws.e1.nwie.net
   dnsNames:
-  - sa-alias.nwie.net
+  - sampapp-alias.nwie.net
